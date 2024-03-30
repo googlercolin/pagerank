@@ -8,6 +8,7 @@ This repository contains an implementation of the PageRank algorithm in Python. 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Code Structure](#code-structure)
+- [Features](#features)
 - [Examples](#examples)
 - [Contributing](#contributing)
 - [License](#license)
@@ -64,9 +65,18 @@ The code is structured as follows:
   - `reducer`: Reducer function for the PageRank algorithm using MapReduce.
   - `run_pagerank_mapreduce`: Runs the PageRank algorithm using MapReduce with PySpark.
 
+## Features
+- Computation of PageRank scores using different methods
+- Exploration of the impact of the damping factor and jump matrix types
+- Visualization of the convergence behavior using convergence plots
+- Graph plotting with node coloring based on PageRank scores
+- Calculation of the Gini coefficient to measure the inequality in the distribution of PageRank scores
+
 ## Examples
 
 The code includes example usage in the `if __name__ == "__main__":` block of each file. These examples demonstrate how to use the functions to compute PageRank scores, plot the graph, and analyze the results.
+
+The code includes examples of small and large graphs, such as the football network, to illustrate the algorithm's performance. You can modify the code to use your own graph data or adjust the parameters as needed.
 
 Feel free to modify the examples or create your own scripts to experiment with different graphs and parameter settings.
 
